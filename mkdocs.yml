@@ -10,8 +10,8 @@ extra:
       link: https://github.com/yostane
 
 nav:
-  - Introduction: index.md
-  - Généralités: generalites.md
+  - Accueil: index.md
+  - Généralités et définitions: generalites.md
   - Mini-projet: projet.md
 
 plugins:
@@ -19,8 +19,8 @@ plugins:
   - glightbox
 
 theme:
-  logo: img/logo.jpg
-  favicon: img/logo.jpg
+  logo: img/logo.png
+  favicon: img/logo.png
   name: material
   features:
     - navigation.top
