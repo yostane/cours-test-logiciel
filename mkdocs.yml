@@ -1,0 +1,61 @@
+site_name: Test logiciel
+site_url: https://yostane.github.io/cours-test-logiciel/
+repo_url: https://github.com/yostane/cours-test-logiciel
+repo_name: yostane/cours-test-logiciel
+edit_uri: ""
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/yostane
+
+nav:
+  - Introduction: index.md
+  - Généralités: generalites.md
+  - Mini-projet: projet.md
+
+plugins:
+  - search
+  - glightbox
+
+theme:
+  logo: img/logo.jpg
+  favicon: img/logo.jpg
+  name: material
+  features:
+    - navigation.top
+    - navigation.indexes
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: lime
+      accent: green
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: lime
+      accent: green
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets:
+      base_path:
+        ["material/poo", "material/functional", "material/generalities"]
