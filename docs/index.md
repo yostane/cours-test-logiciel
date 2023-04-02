@@ -9,6 +9,7 @@
 ## Ressources et liens utiles
 
 -   [Software testing par IBM](https://www.ibm.com/fr-fr/topics/software-testing)
+-   [Test et Validation du Logiciel (LaBRI)](https://dept-info.labri.fr/~felix/Annee2008-09/S4/McInfo4_ASR%20Tests/1.pdf)
 
 ## License
 

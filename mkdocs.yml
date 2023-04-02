@@ -12,6 +12,7 @@ extra:
 nav:
   - Accueil: index.md
   - Généralités et définitions: generalites.md
+  - Quelques librairies de test: librairies.md
   - Mini-projet: projet.md
 
 plugins:
