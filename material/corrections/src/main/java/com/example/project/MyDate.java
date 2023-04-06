@@ -68,7 +68,7 @@ class MyDate {
     return result;
   }
 
-  public static int maxDayOfMonth(int month) {
+  public static int maxDayOfMonthOf2001(int month) {
     return maxDayOfMonth(month, 2001);
   }
 
@@ -79,7 +79,21 @@ class MyDate {
    * @return this (my)date
    */
   public MyDate nextDay() {
-    // TODO
+    if (checkDayLimits(day + 1, month, year) == false) {
+      // On dépasse le jour max donc on passe au mois suivant
+      day = 1;
+      // On vérifie si on passe à l'année suivante
+      if (month + 1 > 12) {
+        month = 1;
+        // Si on veut vraiment être rigouteux, il faut utiliser systématiquement les
+        // getters et setters
+        setYear(getYear() + 1);
+      } else {
+        setMonth(getMonth() + 1);
+      }
+    } else {
+      setDay(getDay() + 1);
+    }
     return this;
   }
 
@@ -100,8 +114,7 @@ class MyDate {
   private static boolean checkDayLimits(int day, int month, int year) {
     if (month == 2)
       return checkFebruaryDayLimits(day, year);
-
-    return checkDay(day);
+    return checkDay(day) && day <= maxDayOfMonth(month, year);
   }
 
   private static boolean checkFebruaryDayLimits(int day, int year) {
@@ -109,7 +122,7 @@ class MyDate {
   }
 
   private static boolean checkDay(int day) {
-    return day >= 0 && day < 32;
+    return day > 0 && day < 32;
   }
 
   private static boolean checkMonth(int month) {
@@ -117,7 +130,7 @@ class MyDate {
   }
 
   private static boolean checkYear(int year) {
-    return true;
+    return year >= 0;
   }
 
   public int getYear() {

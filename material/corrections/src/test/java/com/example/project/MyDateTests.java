@@ -95,7 +95,7 @@ public class MyDateTests {
   @Test
   public void testValidLimitDates() {
     boolean b = MyDate.isValidDate(31, 1, 2000);
-    assertFalse(b, "31 janvier est une date valide");
+    assertTrue(b, "31 janvier est une date valide");
   }
 
   /**
@@ -112,8 +112,7 @@ public class MyDateTests {
    */
   @Test
   public void testFebruaryValidLimitDates() {
-    boolean b = MyDate.isValidDate(29, 2, 2000);
-    assertFalse(b, "29 février 2000 est une date valide");
+    assertTrue(MyDate.isValidDate(29, 2, 2000), "29 février 2000 est une date valide");
   }
 
   /**
@@ -123,6 +122,22 @@ public class MyDateTests {
   public void testFebruaryInvalidLimitDates() {
     boolean b = MyDate.isValidDate(29, 2, 2001);
     assertFalse(b, "29 février 2001 est une date invalide");
+  }
+
+  @ParameterizedTest
+  @CsvSource({
+      "1, 1, 0, 2, 1, 0",
+      "28, 2, 2000, 29, 2, 2000",
+      "28, 2, 2001, 1,3 , 2001",
+      "30, 4, 2001, 1, 5, 2001",
+      "31, 12, 2012, 1, 1, 2013"
+  })
+  public void addsOneDay(int day, int month, int year, int expectedDay, int expectedMonth, int expectedYear) {
+    MyDate d = new MyDate(day, month, year);
+    d.nextDay();
+    assertEquals(expectedDay, d.getDay());
+    assertEquals(expectedMonth, d.getMonth());
+    assertEquals(expectedYear, d.getYear());
   }
 
 }
