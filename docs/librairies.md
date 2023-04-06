@@ -22,12 +22,28 @@ Explorons le projet de démarrage fourni par le [guide officiel](https://junit.o
     1. RàS
     1. Fonctions corriger / modifier: `checkDay`, `checkYear`, `checkDayLimits`, renommer ou enlever `maxDayOfMonth(month)`, `testFebruaryValidLimitDates`, `testValidLimitDates`
 
-### Tests dans un projet Spring MVC
+## Tests dans un projet Spring MVC
+
+### API REST sans base de données
 
 -   Générer un projet Spring avec [le créateur en ligne](https://start.spring.io/) en choisissant les dépendances suivantes: Spring Web et Spring Boot DevTools.
 -   Ouvrir le projet sur VSCode
--   Créer un contrôleur avec deux routes en @GET et en @POST, un service et un modèle
--
+-   Créer un contrôleur avec deux routes en @GET et en @POST, un modèle et un service qui gère une liste statique en mémoire
+-   Ecrire des tests unitaires pour le service
+-   Spring propose deux façons de tester le contrôleur (en d'autres termes l'API REST).
+    -   En lançant un serveur web (avec la stack HTTP complète) via la classe `RestTemplate`
+    -   En lançant un serveur bouchonné (on n'a pas la stack HTTP complète) via la classe `MockMVC`
+-   Ecrire des tests pour le contrôleur
+
+### API REST avec une base de données
+
+Nous allons utiliser la BDD H2 pour sa simplicité car c'est une BDD relationnelle (SQL) qui ne nécessite pas de serveur et réside en mémoire (RAM) par défaut.
+
+-   Générer un projet Spring avec [le créateur en ligne](https://start.spring.io/) en choisissant les dépendances suivantes: Spring Data JPA, H2 Database, Spring Boot DevTool et Spring Web.
+-   Ouvrir le projet sur VSCode
+-   Créer une classe "Model" avec l'annotation `@Entity` et les annotations `@Id` et `@GeneratedValue` sur sa clé primaire.
+-   Créer une interface `xxxxRepository: JpaRepository<Product, Long>` où xxx est le nom de votre modèle
+-   Créer un contrôleur avec deux routes en @GET et en @POST, un modèle et un service qui gère communique ave votre repository
 
 ### Liens et références
 
