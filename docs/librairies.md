@@ -33,7 +33,7 @@ Explorons le projet de démarrage fourni par le [guide officiel](https://junit.o
 -   Lancer votre serveur et vérifier qu'il fonctionne avec la bonne commande (avec gradle `./gradlew bootRun`, avec maven `./mvnw springboot:run`) ou depuis votre IDE
 -   Ecrire des tests unitaires pour le service
 -   Spring propose deux façons de tester le contrôleur (en d'autres termes l'API REST).
-    -   En lançant un serveur web (avec la stack HTTP complète) via la classe `RestTemplate`
+    -   En lançant un serveur web (avec la stack HTTP complète) via la classe `TestRestTemplate`
     -   En lançant un serveur bouchonné (on n'a pas la stack HTTP complète) via la classe `MockMVC`
 -   Ecrire des tests pour le contrôleur
 
@@ -45,7 +45,7 @@ Nous allons utiliser la BDD H2 pour sa simplicité car c'est une BDD relationnel
 -   Ouvrir le projet sur VSCode
 -   Créer une classe "Model" avec l'annotation `@Entity` et les annotations `@Id` et `@GeneratedValue` sur sa clé primaire.
 -   Créer une interface `xxxxRepository: JpaRepository<Product, Long>` où xxx est le nom de votre modèle
--   Créer un contrôleur avec deux routes en @GET et en @POST, un modèle et un service qui gère communique ave votre repository
+-   Créer un contrôleur avec les routes en @GET, @POST, PUT et DELETE, un modèle et un service qui gère communique avec votre repository
 
 ### Liens et références
 
