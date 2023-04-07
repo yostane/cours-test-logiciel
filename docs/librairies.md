@@ -26,9 +26,11 @@ Explorons le projet de démarrage fourni par le [guide officiel](https://junit.o
 
 ### API REST sans base de données
 
--   Générer un projet Spring avec [le créateur en ligne](https://start.spring.io/) en choisissant les dépendances suivantes: Spring Web et Spring Boot DevTools.
+-   Générer un projet Spring avec [initializr](https://start.spring.io/), en choisissant les dépendances suivantes: Spring Web et Spring Boot DevTools.
 -   Ouvrir le projet sur VSCode
--   Créer un contrôleur avec deux routes en @GET et en @POST, un modèle et un service qui gère une liste statique en mémoire
+-   Créer un `@RestController` avec deux routes en @GET et en @POST, un modèle et un service qui gère une liste statique en mémoire.
+    -   Je vous propose d'utiliser comme modèle une classe `Manga` avec trois champs `ISBN`, `name` et `nbPages`
+-   Lancer votre serveur et vérifier qu'il fonctionne avec la bonne commande (avec gradle `./gradlew bootRun`, avec maven `./mvnw springboot:run`) ou depuis votre IDE
 -   Ecrire des tests unitaires pour le service
 -   Spring propose deux façons de tester le contrôleur (en d'autres termes l'API REST).
     -   En lançant un serveur web (avec la stack HTTP complète) via la classe `RestTemplate`

@@ -1,0 +1,10 @@
+http://localhost:8080/manga
+###
+POST http://localhost:8080/manga
+Content-Type: application/json
+
+{
+  "isbn": "azerty",
+  "name": "One Piece Vol 1",
+  "nbPages": 100
+}
