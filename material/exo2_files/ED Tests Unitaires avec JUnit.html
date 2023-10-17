@@ -1,0 +1,1380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0136)https://webcache.googleusercontent.com/search?q=cache:PZUa_RdUBSkJ:deptinfo.cnam.fr/~graffion/UES/GLG101/tps/java/index.html&hl=fr&gl=fr -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="http://deptinfo.cnam.fr/~graffion/UES/GLG101/tps/java/index.html">--><base href="."><style>body{margin-left:0;margin-right:0;margin-top:0}#bN015htcoyT__google-cache-hdr{background:#f8f9fa;font:13px arial,sans-serif;text-align:left;color:#202124;border:0;margin:0;border-bottom:1px solid #dadce0;line-height:16px;padding:16px 28px 24px 28px}#bN015htcoyT__google-cache-hdr *{display:inline;font:inherit;text-align:inherit;color:inherit;line-height:inherit;background:none;border:0;margin:0;padding:0;letter-spacing:0}#bN015htcoyT__google-cache-hdr a{text-decoration:none;color:#1a0dab;}#bN015htcoyT__google-cache-hdr a:hover{text-decoration:underline}#bN015htcoyT__google-cache-hdr a:visited{color:#681da8}#bN015htcoyT__google-cache-hdr div{display:block;margin-top:4px}#bN015htcoyT__google-cache-hdr b{font-weight:bold;display:inline-block;direction:ltr}</style></head><body><div id="bN015htcoyT__google-cache-hdr"><div><span>Ceci est le cache Google de <a href="http://deptinfo.cnam.fr/~graffion/UES/GLG101/tps/java/index.html">http://deptinfo.cnam.fr/~graffion/UES/GLG101/tps/java/index.html</a>.</span>&nbsp;<span>Il s'agit d'un instantané de la page telle qu'elle était affichée le 25 août 2023 22:43:15 GMT.</span>&nbsp;<span>La <a href="http://deptinfo.cnam.fr/~graffion/UES/GLG101/tps/java/index.html">page actuelle</a> peut avoir changé depuis cette date.</span>&nbsp;<a href="http://support.google.com/websearch/bin/answer.py?hl=fr&amp;p=cached&amp;answer=1687222"><span>En savoir plus</span>.</a></div><div><span style="display:inline-block;margin-top:8px;margin-right:104px;white-space:nowrap"><span style="margin-right:28px"><span style="font-weight:bold">Version intégrale</span></span><span style="margin-right:28px"><a href="http://webcache.googleusercontent.com/search?q=cache:PZUa_RdUBSkJ:deptinfo.cnam.fr/~graffion/UES/GLG101/tps/java/index.html&amp;sca_esv=573962864&amp;hl=fr&amp;gl=fr&amp;strip=1&amp;vwsrc=0"><span>Version en texte seul</span></a></span><span style="margin-right:28px"><a href="http://webcache.googleusercontent.com/search?q=cache:PZUa_RdUBSkJ:deptinfo.cnam.fr/~graffion/UES/GLG101/tps/java/index.html&amp;sca_esv=573962864&amp;hl=fr&amp;gl=fr&amp;strip=0&amp;vwsrc=1"><span>Afficher la source</span></a></span></span></div><span style="display:inline-block;margin-top:8px;color:#70757a"><span>Astuce&nbsp;: Pour trouver rapidement votre terme de recherche sur cette page, appuyez sur <b>Ctrl+F</b> ou sur <b>⌘+F</b> (Mac), puis utilisez la barre de recherche.</span></span></div><div style="position:relative;">
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <title>ED Tests Unitaires avec JUnit</title>
+
+
+
+
+
+
+
+
+
+<h1 style="text-align: center;">Exercices
+dirigés Tests Unitaires avec JUnit</h1>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<h2>Exercice 1</h2>
+
+
+
+
+
+
+
+
+Ecrire un test unitaire <span style="font-weight: bold;">StringBufferTest</span> permettant de tester les
+méthodes
+<span style="font-style: italic;">charAt</span>, <span style="font-style: italic;">setCharAt</span> et <span style="font-style: italic;">append</span>(String str) de la classe <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/StringBuffer.html">StringBuffer
+du Java SDK</a>.<br>(Définir également les méthode<span style="font-family: monospace;"></span>s de test <span style="font-style: italic;">testAppendWithNullString </span>et&nbsp; <span style="font-family: monospace;"></span><span style="font-style: italic;">testCharAtWithInvalidIndexes</span> testant les exceptions susceptibles d'être levées par la méthode <a style="font-style: italic;" href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/StringBuffer.html#charAt%28int%29">charAt</a>.)<br>
+
+
+
+
+
+
+
+
+<h2>Exercice 2<a name="MyDate"></a></h2>
+
+
+
+
+
+
+
+
+Les fichiers <span style="font-weight: bold;">incomplets (et même partiellement erronés!)&nbsp;</span> <a href="http://deptinfo.cnam.fr/~graffion/UES/showSource.php?source=GLG101/tps/java/MyDate.java.txt">MyDate.java</a>
+et&nbsp;<a href="http://deptinfo.cnam.fr/~graffion/UES/showSource.php?source=GLG101/tps/java/MyDateTest.java.txt">MyDateTest.java</a>
+sont fournis.<br>
+
+
+
+
+
+
+
+
+<ol>
+
+
+
+
+
+
+
+
+
+  <li>On se propose de tester (et mettre au point) la
+méthode statique boolean <span style="font-weight: bold;">isValidDate</span>(int day, int month, int
+year). <br>
+
+
+
+
+
+
+
+
+Compléter le test unitaire <span style="font-weight: bold;">MyDateTest</span> pour couvrir les
+différentes classes d'équivalences (<a href="http://deptinfo.cnam.fr/~graffion/UES/GLG101/tps/java/ClassesDEquivaleneceLendemain.pdf">plus de détails dans ce document</a>).<br>
+
+
+
+
+
+
+
+
+    <p:colorscheme colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"></p:colorscheme>
+    
+    
+    
+    
+    
+    
+    
+    <table style="width: 685px; height: 365px;" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+      <tbody>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 2px 1px 1px 2px;" height="16" width="130">
+          
+          
+          
+          
+          
+          
+          
+          <div style="text-align: center;"><span style="font-size: 14pt; color: black;"><b>CE Valides</b></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 2px 2px 1px 1px;" height="16" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div style="text-align: center;"><span style="font-size: 14pt; color: black;"><b>CE Invalides</b></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td rowspan="6" style="border-top: 1px solid black; border-left: 2px solid black; border-right: 1px solid black;" height="81" width="130">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;"><span style="">&nbsp;</span>1&lt;=
+jour &lt;=31 </span><span style="font-size: 12pt; color: black;"><i>ET
+          </i></span></div>
+
+
+
+
+
+
+
+
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;"><span style="">&nbsp;</span>1&lt;=
+mois &lt;= 12 </span><span style="font-size: 12pt; color: black;"><i>ET</i></span><span style="font-size: 12pt; color: black;">
+          </span></div>
+
+
+
+
+
+
+
+
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;"><span style="">&nbsp;</span>année &gt;= 0 </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(a1)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 2px 1px 1px;" height="13" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">jour &lt; 1 </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(b1)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 2px 1px 1px;" height="13" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">jour &gt; 31 </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(b2)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 2px 1px 1px;" height="13" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">mois &lt; 1 </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(b3)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 2px 1px 1px;" height="13" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">mois &gt; 12 </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(b4)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 2px 1px 1px;" height="13" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">année
+&gt; 2012 </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(b5)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 2px 1px 1px;" height="18" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">année
+&lt; 1812 </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(b6)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 1px 1px 2px;" height="29" width="130">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;"><span style="">&nbsp;</span>mois
+€ {2,4,6,9,11}<br>
+
+
+
+
+
+
+
+
+&nbsp;=&gt; 1&lt;= jour &lt;=30 </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(a2)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 2px 1px 1px;" height="29" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">mois&nbsp;</span><span style="font-size: 12pt; color: black;">€</span><span style="font-size: 12pt; color: black;"> {2,4,6,9,11} ET
+          </span></div>
+
+
+
+
+
+
+
+
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">(jour&lt;1 OU
+jour&gt;30) </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(b7)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 1px 1px 2px;" height="34" width="130">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;"><span style="">&nbsp;</span>(mois
+= 2) ET (année non </span><span style="font-size: 12pt; color: black;">bissextile) <br>
+
+
+
+
+
+
+
+
+=&gt; (jour &lt;= 28) </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(a3)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 2px 1px 1px;" height="34" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">(mois = 2) ET
+(année non </span><span style="font-size: 12pt; color: black;">bissextile) ET
+(jour&gt; </span><span style="font-size: 12pt; color: black;">28) </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(b8)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 1px 2px 2px;" height="34" width="130">
+          
+          
+          
+          
+          
+          
+          
+          <div style=""><span style="font-size: 12pt; color: black;">(mois = 2) ET
+(année </span><span style="font-size: 12pt; color: black;">bissextile) <br>
+
+
+
+
+
+
+
+
+=&gt; (jour &lt;= 29) </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(a4)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+          <td style="border-style: solid; border-color: black; border-width: 1px 2px 2px 1px;" height="34" width="126">
+          
+          
+          
+          
+          
+          
+          
+          <div><span style="font-size: 12pt; color: black;">(mois
+= 2) ET (année </span><span style="font-size: 12pt; color: black;">bissextile) ET
+(jour&gt; 29) </span><span style="font-size: 12pt; color: rgb(51, 51, 204);"><i>(b9)</i></span></div>
+
+
+
+
+
+
+
+
+          </td>
+
+
+
+
+
+
+
+
+        </tr>
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      </tbody>
+    
+    
+    
+    
+    
+    
+    
+    </table>
+
+
+
+
+
+
+
+
+  </li>
+
+
+
+
+
+
+
+
+  <li>Définir la méthode <span style="font-weight: bold;">nextDay</span> (ou
+    <span style="font-weight: bold;">lendemain</span>) dans la classe <span style="font-weight: bold;">MyDate</span>. La mettre au point en la testant avec
+un nouveau test unitaire <span style="font-weight: bold;">MyDateNextDayTest</span>.</li>
+
+
+
+
+
+
+
+
+</ol>
+
+
+
+
+
+(Note : les signatures des méthodes publiques déjà
+fournies de la classe MyDate ne doivent pas être
+modifiées.)
+
+
+<h2>Exercice 3<a name="MyString"></a><br>
+
+
+
+
+
+
+
+
+</h2>
+
+
+
+
+
+
+
+
+On a besoin de fonctionnalités de manipulation de
+chaînes
+de caractères absentes des classes standards <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/String.html">String
+</a>et <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/StringBuffer.html">StringBuffer</a> (package java.lang). On va donc
+développer
+en utilisant une approche <span style="font-weight: bold;">"test
+first"</span>
+la classe <span style="font-weight: bold;">MyString </span>et
+sa
+classe de tests <span style="font-weight: bold;">MyStringTest</span>.
+<br>
+
+
+
+
+
+
+
+
+Au contraire de la classe String et par souci d'efficacité
+la
+classe MyString sera "mutable" : on l'implémentera donc en
+réutilisant par composition la classe StringBuffer, (on ne peut en
+hériter car la classe StringBuffer est déclarée final) :<br>
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+<div style="margin-left: 40px;"><span style="font-family: Courier New,Courier,monospace;">public class MyString&nbsp;</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">{</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; // instance variables </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; private StringBuffer _sb;</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; /**</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp; * Constructor for objects of class MyString</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp; */</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; public MyString(String s)</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; {</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // initialise instance variables</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _sb = new StringBuffer(s);</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; }<br>
+
+
+
+
+<br>
+
+
+
+
+&nbsp; &nbsp; // Accesseurs<br>
+
+
+
+
+</span><span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; public </span><span style="font-family: Courier New,Courier,monospace;">String </span><span style="font-family: Courier New,Courier,monospace;">getString() { /* TODO */ }</span><br>
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; public void setString(String s) { /* TODO */ }<br>
+
+
+
+
+<br>
+
+
+
+
+</span><span style="font-family: Courier New,Courier,monospace;">// ... </span><span style="font-family: Courier New,Courier,monospace;">TODO</span><br>
+
+
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;"></span></div>
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+Voici la liste des fonctionnalités manquantes
+désirées :<br>
+
+
+
+
+
+
+
+
+<ol>
+
+
+
+
+
+
+
+
+  <li>convertir tous les caractères de la
+chaîne en
+majuscule : <span style="font-family: Courier New,Courier,monospace;">void toUpperCase()</span>,</li>
+
+
+
+
+
+
+
+
+  <li>obtenir le nombre d'occurence d'un caractère
+donné : <span style="font-family: Courier New,Courier,monospace;">int numberOfChar(char c)</span>,</li>
+
+
+
+
+
+
+
+
+  <li>obtenir le nombre de voyelles (le Y sera considéré comme consonne) : <span style="font-family: Courier New,Courier,monospace;">int numberOfVoyelles()</span>,</li>
+
+
+
+
+
+
+
+
+  
+
+  <li>obtenir le premier mot de la chaîne : <span style="font-family: Courier New,Courier,monospace;">String getFirstWord()</span> ...<br>
+
+
+
+
+
+
+
+
+  </li>
+
+
+
+
+
+
+
+
+</ol>
+
+
+
+
+
+
+
+
+Incrémentalement, pour (les accesseurs et) chaque fonctionnalité
+func&lt;i&gt; :<br>
+
+
+
+
+
+
+
+
+<ol>
+
+
+
+
+
+
+
+
+  <li>définir une méthode de test
+testFunc&lt;i&gt; dans
+la classe MyStringTest&nbsp; (ce qui devrait aider à
+définir l'interface de la méthode
+func&lt;i&gt; à
+tester)<br>
+
+
+
+
+
+
+
+
+  </li>
+
+
+
+
+
+
+
+
+  <li>implémenter la méthode
+func&lt;i&gt; dans la classe
+MyString (de la façon la plus simple possible!)<br>
+
+
+
+
+
+
+
+
+  </li>
+
+
+
+
+
+
+
+
+  <li>tester <br>
+
+
+
+
+
+
+
+
+  </li>
+
+
+
+
+
+
+
+
+  <li>optimiser éventuellement
+l'implémentation de
+func&lt;i&gt; dans la classe MyString</li>
+
+
+
+
+
+
+
+
+  <li>revenir au point 3.<br>
+
+
+
+
+
+
+
+
+  </li>
+
+
+
+
+
+
+
+
+</ol>
+
+
+
+
+
+
+
+
+(Définir éventuellement plusieurs
+méthodes de test
+dans la classe <span style="font-weight: bold;">MyStringTest
+</span>pour
+tester une même fonction.)<br>
+
+
+
+
+
+
+
+
+<h2>Liens<br>
+
+
+
+
+
+
+
+
+</h2>
+
+
+
+
+
+
+
+
+<ul>
+
+
+
+
+
+
+
+
+  <li>javadoc JUnit : <a href="http://www.junit.org/junit/javadoc/3.8.1/junit/framework/Assert.html">Assert</a>,
+    <a href="http://www.junit.org/junit/javadoc/3.8.1/junit/framework/TestCase.html">TestCase</a>,
+...<br>
+
+
+
+
+
+
+
+
+  </li>
+
+
+
+
+
+
+
+
+  <li><a href="http://deptinfo.cnam.fr/~graffion/UES/GLG101/JUnit4-1.pdf">support de cours
+JUnit</a></li>
+
+
+
+
+
+
+
+
+  <li><a href="http://www.junit.org/">www.junit.org</a></li>
+
+
+
+
+
+
+
+
+  <li><a href="http://prdownloads.sourceforge.net/junit/junit3.8.1.zip?download" target="offsite">Junit3.8.1.zip </a></li>
+
+
+
+
+
+
+
+
+  <li><a href="http://junit.sourceforge.net/doc/testinfected/testing.htm">Test
+Infected -
+Programmers Love Writing Tests</a>. (Article sur JUnit paru dans
+Java
+Report en juillet 1998)</li>
+
+
+
+
+
+
+
+
+  <li><a href="http://www.bluej.org/">bluej </a>(IDE
+utilisé): <a href="http://www.bluej.org/tutorial/tutorial_french.pdf">tutoriel</a> en français, <a href="http://www.bluej.org/tutorial/testing-tutorial.pdf">testing tutorial</a>.</li>
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+</div></body></html>
