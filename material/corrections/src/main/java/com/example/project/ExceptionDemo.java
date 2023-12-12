@@ -7,10 +7,11 @@ enum ErrorCode {
 
 public class ExceptionDemo {
 
-  public void generateExceptionIfFalse(boolean test) throws IllegalArgumentException {
+  public boolean generateExceptionIfFalse(boolean test) throws IllegalArgumentException {
     if (test == false) {
       throw new IllegalArgumentException();
     }
+    return true;
   }
 
   public ErrorCode generateError(boolean test) {
@@ -26,7 +27,8 @@ public class ExceptionDemo {
     }
 
     try {
-      generateExceptionIfFalse(false);
+      System.out.println(generateExceptionIfFalse(false));
+      System.out.println("hello");
     } catch (IllegalArgumentException e) {
 
     }

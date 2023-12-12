@@ -53,6 +53,7 @@ public class MyDateTests {
 
   /**
    * Test method for {@link MyDate#checkData()} .
+   * CSV: Comma (virgule) Separated Value
    */
   @ParameterizedTest
   @CsvSource({

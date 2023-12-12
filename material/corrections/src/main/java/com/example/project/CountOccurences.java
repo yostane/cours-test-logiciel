@@ -3,6 +3,7 @@ package com.example.project;
 import java.util.stream.Collectors;
 
 record Pair(char key, long value) {
+
 }
 
 public class CountOccurences {
