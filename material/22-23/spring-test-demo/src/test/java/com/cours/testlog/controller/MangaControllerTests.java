@@ -54,7 +54,7 @@ public class MangaControllerTests {
   }
 
   @Test
-  public void testAddOne() {
+  public void testCannotAddSameIsbnTwice() {
     Manga manga = new Manga();
     manga.setIsbn("sdsfds");
     manga.setName("my hero academia");

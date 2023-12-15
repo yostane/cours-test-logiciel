@@ -1,9 +1,9 @@
 package com.cours.testlog.model;
 
 public class Manga {
-  String isbn;
-  String name;
-  int nbPages;
+  private String isbn;
+  private String name;
+  private int nbPages;
 
   public String getIsbn() {
     return isbn;
@@ -28,5 +28,4 @@ public class Manga {
   public void setNbPages(int nbPages) {
     this.nbPages = nbPages;
   }
-
 }
